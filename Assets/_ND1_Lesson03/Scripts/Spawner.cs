@@ -9,6 +9,9 @@ public class Spawner : MonoBehaviour
     public GameObject prefab = null;    // 出現させたいプレハブ
     public float coolTimer = 0.0f;      // 待ち時間のタイマー
 
+    public float randomYMin = -5.0f;    // Y軸乱数の最小値
+    public float randomYMax = 5.0f;     // Y軸乱数の最大値
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,8 +26,15 @@ public class Spawner : MonoBehaviour
 
         if ( coolTime < coolTimer )
         {
+            Vector3 randomPosition = new Vector3(0, 0, 0);              // ランダム座標の変数
+            randomPosition.x = 15;                                      // X軸は固定
+            randomPosition.y = Random.Range(randomYMin, randomYMax);    // Y軸は乱数
+
+            Vector3 spawnAngles = new Vector3(0, 0, 0);     // 出現時の角度
+
             // プレハブを出現させる
-            Instantiate(prefab);
+            // Instantiate( 出現させるオブジェクト情報, 出現座標, 出現角度 )
+            Instantiate( prefab, randomPosition, Quaternion.Euler(spawnAngles) );
 
             // タイマーを0に戻す
             coolTimer = 0;

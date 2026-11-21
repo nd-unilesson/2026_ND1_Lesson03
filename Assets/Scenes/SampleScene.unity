@@ -356,6 +356,14 @@ PrefabInstance:
       propertyPath: coolTime
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 768561949326734361, guid: 07ced31920bc3294da513e2decef56da, type: 3}
+      propertyPath: randomYMax
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 768561949326734361, guid: 07ced31920bc3294da513e2decef56da, type: 3}
+      propertyPath: randomYMin
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 3421683648846399294, guid: 07ced31920bc3294da513e2decef56da, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
