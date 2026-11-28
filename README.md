@@ -1,4 +1,13 @@
 # ND1_Lesson03 『2D 横スクロールシューティングゲームサンプル』
+## 2026-11-28 Update.
+### Playerの実装
+ - Player.cs
+ - [ ] キーボード操作で上下左右に移動させる
+ - [ ] 衝突判定用のメソッドを定義する（OnTriggerEnter2D）
+
+<img width="480" height="270" alt="nd1_lesson03_20261128" src="https://github.com/user-attachments/assets/7cf3f602-c4c6-4e4d-887d-3998ead4cc09" />
+
+
 ## 2026-11-21 Update.
 ### Enemyの実装
 - [Enemy.cs](https://github.com/nd-unilesson/2026_ND1_Lesson03/blob/main/Assets/_ND1_Lesson03/Scripts/Enemy.cs)
